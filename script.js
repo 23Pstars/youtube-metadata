@@ -44,6 +44,8 @@ window.onload = function () {
                 const dislikes = eLikes.getAttribute('aria-label').replace(/[^0-9]/g, '');
                 const comments = eComments.innerText.replace(/[^0-9]/g, '');
 
+                const idNextVideo = Math.floor(Math.random() * 6);
+
                 // console.log('Title:', title);
                 // console.log('Views:', views);
                 // console.log('Duration:', duration);
@@ -53,7 +55,7 @@ window.onload = function () {
                 // console.log('Comments:', comments);
 
                 const Http = new XMLHttpRequest();
-                const url = 'https://zaf.web.id/labs/youtube-metadata/store.php';
+                const url = 'https://zaf.web.id/labs/yt-meta/store.php';
 
                 Http.open('POST', url);
                 Http.send(JSON.stringify([id, title, duration, date, views, likes, dislikes, comments]));
@@ -61,7 +63,8 @@ window.onload = function () {
                 Http.onreadystatechange = function () {
                     if (Http.status == 200) {
                         // console.log(Http.responseText);
-                        window.location = eFirstNextVideo.href;
+                        // window.location = eFirstNextVideo.href;
+                        window.location = eNextVideo[idNextVideo].href;
                     }
                 }
 
