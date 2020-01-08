@@ -1,16 +1,16 @@
 {
-    "manifest_version": 2,
-    "name": "YouTube Meta Data",
-    "description": "YouTube meta data grabber.",
-    "version": "1.0",
-    "content_scripts": [
-        {
-            "js": [
-                "script.js"
-            ],
-            "matches": [
-                "https://www.youtube.com/watch*"
-            ]
-        }
-    ]
+  "manifest_version": 2,
+  "name": "YouTube Meta Data",
+  "description": "YouTube meta data grabber.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": [
+        "script_m.js"
+      ],
+      "matches": [
+        "https://m.youtube.com/watch*"
+      ]
+    }
+  ]
 }
