@@ -1,4 +1,8 @@
-const refresh = 500;
+const _refresh = 10000, _ready = 500;
+
+setTimeout(function () {
+    location.reload();
+}, _refresh);
 
 window.onload = function () {
 
@@ -69,6 +73,6 @@ window.onload = function () {
 
         }
 
-    }, refresh);
+    }, _ready);
 
-}
+};
