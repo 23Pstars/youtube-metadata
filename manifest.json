@@ -5,6 +5,7 @@
   "version": "1.0",
   "content_scripts": [
     {
+      "run_at": "document_start",
       "js": [
         "script_m.js"
       ],
