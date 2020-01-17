@@ -13,7 +13,7 @@ window.onload = function () {
 
         try {
 
-            let playerConfig = document.getElementsByTagName('script')[11].innerHTML;
+            let playerConfig = document.getElementsByTagName('script')[12].innerHTML;
             playerConfig = playerConfig.match('ytInitialPlayerConfig = {(.+?)};')[1];
             playerConfig = JSON.parse("{" + playerConfig + "}");
 
