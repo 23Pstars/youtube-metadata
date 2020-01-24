@@ -9,7 +9,7 @@ window.onload = function () {
     this.setTimeout(function () {
 
         const Http = new XMLHttpRequest();
-        const url = 'https://zaf.web.id/labs/yt-meta/get_m.php';
+        const url = 'https://sia.unram.ac.id/___zaf/yt-meta/get_m.php';
 
         try {
 
